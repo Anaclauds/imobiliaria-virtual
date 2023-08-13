@@ -1,22 +1,22 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!DOCTYPE html> <!--informa para o navegador que esse doc é um doc html-->
+<html lang="pt-br"> <!--tag html-->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/style/style.css">
-  <title>Imobiliária Virtual</title>
+<head> <!-- cabeça do site-->
+  <meta charset="UTF-8"> <!--normas abnt-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--resp. pela responsividade ' content'-->
+  <link rel="stylesheet" href="./style/style.css"> <!--link do css para estilizar a página-->
+  <title>Imobiliária Virtual</title> <!--título da guia-->
 </head>
 
-<body>
-  <header class="container header">
-    <div class="marca">
-    <img src="img/flat-color-icons_home.svg" alt="Lobo" width="104" height="38">
-    <p>Imobiliária Virtual</p>
+<body> <!--corpo da página-->
+  <header class="container header"> <!--cria uma classe para facilitar a estilização, separando as classes específicas-->
+    <div class="marca"> <!--bloco genérico que se coloca qualquer coisa-->
+    <img src="img/flat-color-icons_home.svg" alt="Lobo" width="104" height="38"> <!--imagem da casa-->
+    <p>Imobiliária Virtual</p> <!-- p = parágrafo-->
   </div>
-    <nav>
-      <ul class="header-menu">
-        <li><a href="#imoveis">Compra</a></li>
+    <nav> <!-- tag de bloco como div e hader, o navegador vai entender que é para a navegação, serve para colocar as opções na barra de menu-->
+      <ul class="header-menu"> <!--criar uma lista não ordenada (UL) pq não importa a ordem que o usuário clicar-->
+        <li><a href="#imoveis">Compra</a></li> <!-- conteudo da lista-->
         <li><a href="#locacao">Locação</a></li>
         <li><a href="#">Financeiro</a></li>
         <li class="imoveis"><a href="login.html">Entrar</a></li>
@@ -24,9 +24,9 @@
     </nav>
   </header>
 
-  <section class="virtual-realty-section" id="sobre">
+  <section class="virtual-realty-section" id="sobre"> <!--tag semantica de sessao, onde foi colocado o 'sobre da empresa'-->
     <div class="virtual-realty-content">
-      <h2 class="virtual-realty-heading">Conheça a Imobiliária Virtual</h2>
+      <h2 class="virtual-realty-heading">Conheça a Imobiliária Virtual</h2><!-- tag usada para título-->
       <p class="virtual-realty-text">Seja bem-vindo à <span class="company-name">Imobiliária Virtual</span>, sua parceira na busca pelo lar dos seus sonhos.</p>
       <p class="virtual-realty-text">Nossa missão é tornar a busca por propriedades uma experiência emocionante e eficiente.</p>
       <p class="virtual-realty-text">Descubra o novo padrão de encontrar imóveis:</p>
@@ -38,7 +38,7 @@
       </ul>
     </div>
   </section>
-
+<!-- cards: -->
   <section class="section" id="imoveis">
     <div class="container card-grid">
       <div class="card">
@@ -79,9 +79,9 @@
     </div>
   </section>
   
-  <img class="chat" src="img/chat.svg" alt="chat">
+  <img class="chat" src="img/chat.svg" alt="chat"> <!-- imagem do chat online-->
 
-  <footer class="footer" id="contato">
+  <footer class="footer" id="contato"> <!-- rodapé-->
     <div class="container footer-container">
       <p class="footer-texto">Estou disponível para novos projetos no momento. Entre em contato comigo e marcamos uma conversa 👋</p>
       <ul class="footer-contato">
