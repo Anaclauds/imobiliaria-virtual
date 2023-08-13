@@ -1,0 +1,82 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 65px;
+}
+
+.marca {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.header-menu a {
+  font-size: 1.125rem;
+  line-height: 1.3; /*Altura de linha*/
+  padding: 10px 20px; /*Almentar a área de clique para o mobile*/
+  text-decoration: none;
+  color: #141414;
+  display: block; /*Para pegar corretamente os valores de padding*/
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.header-menu a:hover {
+  background-color: #141414;
+  color: #f5f5f5;
+  transition: 0.4s;
+}
+
+.imoveis a{
+  background-color: #617a89;
+  color: #f5f5f5;
+}
+
+.imoveis a:hover {
+  background-color: #2e6d92;
+  color: #f5f5f5;
+}
+
+@media (max-width: 800px) {
+  .header {
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px; /*Sobreescreve o tamanho do padding anterior*/
+  }
+
+  .header-menu {
+    justify-content: center;
+  }
+
+  .header a {
+    background: #f5f5f5;
+    border-radius: 4px;
+  }
+
+  .imoveis a{
+    background-color: #617a89;
+    color: #f5f5f5;
+  }
+  
+}
+
+@media (max-width: 375px) {
+
+  .header img {
+    display: none;
+  }
+}

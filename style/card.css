@@ -1,0 +1,56 @@
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  position: relative;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.card::before {
+  content: "Comprar";
+  position: absolute;
+  background-color: green;
+  padding: 5px 10px;
+  top: 25px;
+  border-radius: 5px;
+
+}
+
+.card p {
+  text-align: left;
+}
+
+.card {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  flex: 1;
+  object-fit: cover;
+}
+
+.description {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.location {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 800px) { 
+  .card-grid {
+    grid-template-columns:  1fr;
+  }
+}
