@@ -9,6 +9,6 @@ Atividade apresentada a disciplina de WEB I, com o intuito de criar um esboço d
 * HTML
 * CSS
 
-# Previa de como ficou o site da imobiliária vitual:
+# Prévia de como ficou o site da imobiliária vitual:
 
 https://anaclauds.github.io/imobiliaria-virtual/
